@@ -1,4 +1,4 @@
-import { Sort } from "./Sort";
+import { Sort } from "./sort";
 export declare class QueryArgs {
     sort?: Sort[];
     filter?: string[];

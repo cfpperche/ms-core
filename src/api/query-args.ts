@@ -1,6 +1,6 @@
 import { Transform, Type } from "class-transformer";
 import { IsInt, IsOptional, IsString, Max, Min } from "class-validator";
-import { Sort } from "./Sort";
+import { Sort } from "./sort";
 
 export class QueryArgs {
   @IsOptional()
