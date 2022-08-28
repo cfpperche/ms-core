@@ -1,3 +1,3 @@
-export interface UseCase<TModel> {
-  execute(...args: any[]): Promise<TModel>;
+export interface UseCase<TResponse> {
+  execute(...args: any[]): Promise<TResponse> | TResponse;
 }
