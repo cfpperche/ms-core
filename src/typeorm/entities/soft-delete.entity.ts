@@ -1,7 +1,7 @@
-import { DeleteDateColumn } from 'typeorm';
-import { CoreEntity } from './core.entity';
+import { DeleteDateColumn } from "typeorm";
+import { AuditEntity } from "./audit.entity";
 
-export abstract class SoftDeleteEntity extends CoreEntity {
-  @DeleteDateColumn({ type: 'timestamptz' })
+export abstract class SoftDeleteEntity extends AuditEntity {
+  @DeleteDateColumn({ type: "timestamptz" })
   deletedAt!: Date;
 }

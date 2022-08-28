@@ -1,4 +1,4 @@
-import { CoreEntity } from './core.entity';
-export declare abstract class SoftDeleteEntity extends CoreEntity {
+import { AuditEntity } from "./audit.entity";
+export declare abstract class SoftDeleteEntity extends AuditEntity {
     deletedAt: Date;
 }
